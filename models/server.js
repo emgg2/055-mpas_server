@@ -33,13 +33,7 @@ class Server {
           this.app.use ( cors() );
 
 
-        // get last tickets
-        this.app.use ( '/lastTickets', (req, res) =>{
-            res.json({
-                ok:true,
-                lastTickets: this.sockects.ticketList.last13
-            })
-        })
+       
 
 
       
